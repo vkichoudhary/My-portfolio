@@ -1,0 +1,104 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.light {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1f2937;
+    color: #ffffff;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+#theme-toggle {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+section {
+    padding: 20px;
+    margin: 10px auto;
+    max-width: 900px;
+}
+
+.skill-icons span {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 15px;
+    background-color: #2563eb;
+    color: white;
+    border-radius: 5px;
+}
+
+.project-list li {
+    margin: 5px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #1f2937;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Profile Photo Styles */
+.photo-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.photo-container {
+    display: inline-block;
+    position: relative;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;  /* Makes the image circular */
+    object-fit: cover;   /* Ensures the image fills the circle */
+    border: 3px solid #fff; /* White border around the image */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Adds a shadow effect */
+    animation: bounce 2s ease-in-out infinite; /* Adds bounce animation */
+}
+
+/* Animation for bouncing effect */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
